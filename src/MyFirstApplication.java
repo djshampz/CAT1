@@ -35,13 +35,13 @@ public class MyFirstApplication extends Application {
         ImageView imageView = new ImageView("resources/icons8-battle.net-50.png");
         ImageView imageView1 = new ImageView("resources/icons8-door-sensor-error-50.png");
 
-        Button button = new Button("Register", imageView);
-        Button button1 = new Button("Cancel", imageView1);
+        Button registration = new Button("Register", imageView);
+        Button cancel_registration = new Button("Cancel", imageView1);
 
-        button.setOnAction(e -> {
+        registration.setOnAction(e -> {
             text5.setText("WELCOME TO THE MATRIX");
         });
-        button1.setOnAction((e -> {
+        cancel_registration.setOnAction((e -> {
             text5.setText("SO YOU HAVE CHOSEN THE BLUE PILL");
         }));
 
@@ -65,8 +65,8 @@ public class MyFirstApplication extends Application {
         gridPane.add(passwordField, 1,6);
         gridPane.add(text4, 0,8);
         gridPane.add(passwordField1, 1,8);
-        gridPane.add(button,0,15);
-        gridPane.add(button1, 1,15);
+        gridPane.add(registration,0,15);
+        gridPane.add(cancel_registration, 1,15);
 
         parent.getChildren().addAll(gridPane, text5);
 
